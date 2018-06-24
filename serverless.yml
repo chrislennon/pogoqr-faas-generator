@@ -1,0 +1,23 @@
+# serverless.yml
+
+service: pogoqr-faas-generator
+
+provider:
+  name: azure
+  location: West US
+
+plugins:
+  - serverless-azure-functions
+
+functions:
+  generate:
+    handler: handler.generate
+    events:
+      - http: true
+        x-azure-settings:
+            name: req
+            methods:
+                - GET
+            route: generate/{friendcode} #<string>, default - <function name>
+            authLevel: anonymous #<enum - anonymous|function (default)|admin>
+            

@@ -1,0 +1,30 @@
+{
+  "name": "pogoqr-faas-generator",
+  "version": "0.0.1",
+  "description": "Simple faas generator for QR codes used in twitter cards",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrislennon/pogoqr-faas-generator.git"
+  },
+  "keywords": [
+    "Azure",
+    "Serverless",
+    "Serverless",
+    "Framework"
+  ],
+  "author": "chrislennon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrislennon/pogoqr-faas-generator/issues"
+  },
+  "homepage": "https://github.com/chrislennon/pogoqr-faas-generator#readme",
+  "dependencies": {
+    "qartjs": "^1.1.2",
+    "serverless": "^1.27.3",
+    "serverless-azure-functions": "^0.6.0"
+  }
+}
