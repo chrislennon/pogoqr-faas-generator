@@ -4,3 +4,9 @@ A function as a service example for generation of QR codes (primary use Twitter 
 This code does not work as I realised too late that TwitterBot needs real hosted files on disk, not spoofed base64 injected images. 
 
 While this code does deploy an Azure function with enough code to start rendering an image, I stopped short of pushing it to a bucket for hosting. Maybe at somepoint.... maybe.
+
+
+References:
+
+- [Twitter Docs](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/summary-card-with-large-image)
+- [StackOverflow Post](https://stackoverflow.com/a/45192528)
